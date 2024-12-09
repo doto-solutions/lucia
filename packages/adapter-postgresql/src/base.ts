@@ -112,9 +112,9 @@ export interface TableNames {
 }
 
 export interface Controller {
-	execute(sql: string, args?: any[]): Promise<void>;
-	get<T extends {}>(sql: string, args?: any[]): Promise<T | null>;
-	getAll<T extends {}>(sql: string, args?: any[]): Promise<T[]>;
+	execute(sql: string | TemplateStringsArray, args?: any[]): Promise<void>;
+	get<T extends {}>(sql: string | TemplateStringsArray, args?: any[]): Promise<T | null>;
+	getAll<T extends {}>(sql: string | TemplateStringsArray, args?: any[]): Promise<T[]>;
 }
 
 interface SessionSchema extends RegisteredDatabaseSessionAttributes {

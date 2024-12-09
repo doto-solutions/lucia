@@ -39,10 +39,10 @@
 		".": "./dist/index.js"
 	},
 	"peerDependencies": {
+		"@neondatabase/serverless": "0.7 - 0.9",
 		"lucia": "3.x",
 		"pg": "^8.8.0",
-		"postgres": "^3.3.0",
-		"@neondatabase/serverless": "0.7 - 0.9"
+		"postgres": "^3.3.0"
 	},
 	"peerDependenciesMeta": {
 		"pg": {
@@ -64,6 +64,8 @@
 		"tsx": "^3.12.6"
 	},
 	"dependencies": {
+		"kysely": "^0.27.5",
+		"kysely-data-api": "^1.0.1",
 		"pg": "^8.8.0",
 		"postgres": "^3.3.5"
 	}
